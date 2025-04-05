@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+    <!-- "Hi Buddy" Text -->
+    <h1>Hi Buddy</h1>
+
+    <!-- Table: My Bucket List -->
+    <table id="bucketList">
+        <tr>
+            <th>Category</th>
+            <th>Goals</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Travel</td>
+            <td>Travel the whole world</td>
+            <td><button class="remove-btn" onclick="removeRow(this)">Remove</button></td>
+        </tr>
+        <tr>
+            <td>Food</td>
+            <td>Sea food</td>
+            <td><button class="remove-btn" onclick="removeRow(this)">Remove</button></td>
+        </tr>
+      <tr>
+            <td>Skills</td>
+            <td>Python,C++</td>
+            <td><button class="remove-btn" onclick="removeRow(this)">Remove</button></td>
+        </tr>
+    </table>
+
+    <!-- Input Fields & Button to Add Items -->
+    <div class="input-container">
+        <input type="text" id="category" placeholder="Enter Category">
+        <input type="text" id="goal" placeholder="Enter Goal">
+        <button onclick="addItem()">Add Item</button>
+    </div>
+
+  
+
+</body>
+<script src="script.js"></script>
+</html>
